@@ -4,16 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Secret Santa</title>
+  <%= stylesheet_link_tag "style" %>
+
 </head>
 <body>
   <div class="container">
-    <div class="container-in">
-      <div class="sign-in">
-        <%= link_to "Войти", home_signin_path %>
+    <div class="container-inner">
+      <div class="header">
+        <h1 class="header-title">Тайный санта</h1>
       </div>
-      <div class="signup">
-        <%= link_to "Зарегистрироваться", home_signup_path %>
+      <div class="container-descr">
+        <p class="container-descr-1">Этот сервис создан для того,
+          чтобы ты и твои друзья смогли почувствовать
+          себя настоящими волшебниками
+        </p>
+        <p class="container-descr-2">
+          Стань сантой всего в несколько кликов!
+        </p>
+      </div>
+      <div class="container-sign">
+        <div class="container-sign-in">
+          <%= link_to "Войти", home_signin_path %>
+        </div>
+        <div class="container-sign-up">
+          <%= link_to "Зарегистрироваться", home_signup_path %>
+        </div>
+      </div>
       </div>
     </div>
   </div>
