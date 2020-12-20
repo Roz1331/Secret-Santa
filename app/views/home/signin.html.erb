@@ -1,0 +1,13 @@
+<h1>Sign in</h1>
+
+<div class="sign-in">
+    <%= form_for(:session, url: home_signin_url) do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "sign in", class: "btn btn-primary" %>
+    <% end %>
+</div>
