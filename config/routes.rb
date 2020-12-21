@@ -9,8 +9,11 @@ Rails.application.routes.draw do
 
   resources  :teams do
   end
+  resource :user do
+    post :signin, to: 'users#signin', on: :member
+  end
 
   get 'create', to: 'teams#create'
-
+  get 'teams/new', to: 'teams#new'
 
 end

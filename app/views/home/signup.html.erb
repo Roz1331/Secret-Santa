@@ -1,18 +1,13 @@
 <h1>Sign up</h1>
 
 <div class="sign-up">
-  <%= form_for(:session, url: home_signup_url) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
+  <%= form_for(:user, url: user_path, method: :post) do |f| %>
 
-    <%= f.label :login %>
-    <%= f.text_field :login, class: 'form-control' %>
 
     <%= f.label :email %>
     <%= f.email_field :email, class: 'form-control' %>
 
-    <%= f.label :password %>
-    <%= f.password_field :password, class: 'form-control' %>
+
 
     <%= f.submit "sign up", class: "btn btn-primary" %>
   <% end %>
