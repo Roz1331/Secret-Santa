@@ -2,12 +2,14 @@
 
 <div class="sign-up">
   <%= form_for(:user, url: user_path, method: :post) do |f| %>
-
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
 
     <%= f.label :email %>
     <%= f.email_field :email, class: 'form-control' %>
 
-
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'form-control' %>
 
     <%= f.submit "sign up", class: "btn btn-primary" %>
   <% end %>
