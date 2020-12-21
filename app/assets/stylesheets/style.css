@@ -7,8 +7,9 @@
 .container
 {
     color: #fff;
-    /*background-image: url('../images/main-bgrnd.png');*/
     background-color: #151E16;
+    background-image: url('app/assets/images/main-bgrnd.png');
+
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

@@ -7,10 +7,10 @@ Rails.application.routes.draw do
 
   post '/home/new', to: 'home#new'
 
-  resources  :teams
-  #get '/teams/create', to 'teams#create'
-  # resources  :teams do
+  resources  :teams do
+  end
 
-  #end
+  get 'create', to: 'teams#create'
+
 
 end

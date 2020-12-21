@@ -20,23 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367dd0f8-3727-4249-abb2-057d7276e7bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/teams.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/teams_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/teams_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/team.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/teams/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20201220131355_create_teams.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/teams_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/teams.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/team_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +177,7 @@
       <workItem from="1607975511790" duration="2411000" />
       <workItem from="1608466552416" duration="7328000" />
       <workItem from="1608474016311" duration="626000" />
-      <workItem from="1608474728429" duration="5347000" />
+      <workItem from="1608474728429" duration="9071000" />
     </task>
     <servers />
   </component>
