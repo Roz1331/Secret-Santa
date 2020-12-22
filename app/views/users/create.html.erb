@@ -1,11 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-user">
+      <h1 class="container-user-text">
+        Вы зашли под пользователем:
+        <%= @user.name %>
+        <%= @user.email %>
+      </h1>
+      <div class="container-user-team">
+        <div class="container-user-team-invitation">
+          <p>Введите ключ и присоединитесь к команде!</p>
+          <div class="container-user-team-form">
+            <%= form_for(:user, url: user_path, method: :post) do |f| %>
+              <div>
+                <p class="container-user-team-text">Ключ:</p>
+                <input type="text" class="container-user-team-input">
+              </div>
+              <div >
+                <%= f.submit "Присоединиться!", class: "btn btn-primary container-user-team-join" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
 
-!!!!!!!
 
-<div>
-  <%= @user.name %>
-  <%= @user.email %>
-</div>
+<!--<div>-->
+  <%#= @user.name %>
+  <%#= @user.email %>
+<!--</div>-->
 
 
 

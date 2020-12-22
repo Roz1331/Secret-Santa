@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Parisienne', cursive;
+}
+
+.container
+{
+  color: #fff;
+  //background-color: #151E16;
+
+  background-image: url('https://oren.ru/wp-content/uploads/2018/11/Novyj-god-Orenburg-2019.jpg') !important;
+  background: rgba(0,0,0,0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+  }
+
+  &-inner {
+    position: relative;
+    margin: 0 200px;
+    z-index: 3;
+  }
+
+  &-user {
+    position: relative;
+    z-index: 3;
+  }
+
+  &-descr {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 53px;
+    width: 555px;
+    &-1 {
+      margin-bottom: 70px;
+    }
+  }
+
+  &-sign {
+    margin-top: 115px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    &-in {
+      padding: 10px 70px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 69.46%, #FFFFFF 100%), #C21118;
+      border-radius: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &-up {
+      padding: 10px 120px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 69.46%, #FFFFFF 100%), #C21118;
+      border-radius: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &-user {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 24px;
+    &-team {
+      margin-top: 50px;
+      &-form {
+        margin-top: 20px;
+      }
+      &-join {
+        padding: 10px 100px;
+        border-radius: 10px;
+        margin-top: 36px;
+        cursor: pointer;
+        background-color: #5EC03B;
+        color: #fff;
+        border: none;
+        font-size: 22px;
+      }
+      &-text {
+        display: contents;
+      }
+    }
+  }
+}
+
+.header
+{
+    padding-top: 50px;
+  &-title {
+    font-size: 70px;
+  }
+}
+
+.sign-up {
+  text-align: center;
+  margin: 90px 0 88px 0;
+  font-size: 24px;
+  &-form {
+    display: flex;
+    flex-direction: column;
+    &-password {
+      margin-left: -40px;
+    }
+    div {
+      margin-bottom: 10px;
+    }
+    &-btn {
+      padding: 10px 100px;
+      border-radius: 10px;
+      margin-top: 36px;
+      cursor: pointer;
+      background-color: #5EC03B;
+      color: #fff;
+      border: none;
+      font-size: 22px;
+    }
+  }
+  &-title {
+    margin-bottom: 80px;
+  }
+}
+

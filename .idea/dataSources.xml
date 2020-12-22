@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/Secret_Santa_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Secret_Santa_development@localhost [2]" uuid="21a4f7ee-7c7c-4bb1-84c3-cc828525544e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/Secret_Santa_development</jdbc-url>
+    </data-source>
   </component>
 </project>

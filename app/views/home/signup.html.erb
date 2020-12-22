@@ -1,16 +1,36 @@
-<h1>Sign up</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Secret Santa</title>
+</head>
+<body>
+  <div class="sign-up">
+    <h1 class="sign-up-title">
+      Страница регистрации
+    </h1>
+    <div class="sign-up-form">
+      <%= form_for(:user, url: user_path, method: :post) do |f| %>
+        <div class="sign-up-form-name">
+          <%= f.label :name%>
+          <%= f.text_field :name, class: 'form-control sign-up-form-name' %>
+        </div>
+        <div>
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+        <div class="sign-up-form-password">
+          <%= f.label :password%>
+          <%= f.password_field :password, class: 'form-control sign-up-form-name' %>
+        </div>
+        <div>
+          <%= f.submit "Sign up", class: "btn btn-primary sign-up-form-btn" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</body>
+</html>
 
-<div class="sign-up">
-  <%= form_for(:user, url: user_path, method: :post) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
-
-    <%= f.label :email %>
-    <%= f.email_field :email, class: 'form-control' %>
-
-    <%= f.label :password %>
-    <%= f.password_field :password, class: 'form-control' %>
-
-    <%= f.submit "sign up", class: "btn btn-primary" %>
-  <% end %>
-</div>
